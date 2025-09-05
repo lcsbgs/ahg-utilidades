@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,9 +34,9 @@ const Header = () => {
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <a href="/" className="flex items-center hover:opacity-80 transition-opacity">
+          <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
             <img src="images/logo/ahg.svg" alt="AHG Utilidades" className="h-12 w-auto" />
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
